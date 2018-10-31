@@ -6,6 +6,8 @@ taxonomy:
 
 ## Content Tag Pair
 
+The ``content`` tag pair is designed to work with any type of content you can output in your ExpressionEngine templates. If the current page is part of an a/b test, this tag will determine which tag pair of content to output to the page. By default, if ``?v=2`` is in your URL, all the content within the ``{original}{/original}`` tag pair will be removed from the output to the page, and content within the ``{variant}{/variant}`` tag pair will be displayed. If ``?v=1`` or the ``?v`` GET parameter is not defined, then the content within the ``{original}{/original}`` tag pair will be displayed.
+
 ```
 {exp:experiments:content}
    {original}
@@ -39,7 +41,7 @@ The ``{original}{/original}`` and ``{variant}{/variant}`` tag pairs can be prefi
 Add an Experiments atom to your block and make it a block variable by prefixing the short name with `block_var` [See Bloqs documentation](https://eebloqs.com/documentation/nesting). It can be named anything, for example, `block_var_experiment` or `block_var_test`. This field is designed to work with Bloqs' nestable mode, but will also work with nesting turned off. If you add it to a parent block all child blocks will be hidden or removed based
 on the value chosen in the field, and which version of the experiment is being displayed to the end user.
 
-The only updates you need to make to your template  is to wrap the main Bloqs field tag pair with the experiments plugin tag. That's it. Bloqs and the Experiment field will handle the rest.
+The only updates you need to make to your template  is to wrap the main Bloqs field tag pair with the experiments plugin tag. That's it. Bloqs and the Experiment field will handle the rest as long as the GET parameter ``?v=N`` is present.
 
 ```
 {exp:channel:entries channel="pages" entry_id="{segment_2}"}
