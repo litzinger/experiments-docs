@@ -1,5 +1,5 @@
 ---
-title: Experiments
+title: Installation
 taxonomy:
     category: docs
 ---
