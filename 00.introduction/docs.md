@@ -8,5 +8,5 @@ This add-on is designed to help facilitate basic a/b tests in your ExpressionEng
 
 For additional information on client side and server side a/b testing see the following resources:
 
-* https://www.optimizely.com/resources/client-vs-server-side-testing-infographic/
-* https://speakerdeck.com/boldminded/b-testing
+* [https://www.optimizely.com/resources/client-vs-server-side-testing-infographic/](https://www.optimizely.com/resources/client-vs-server-side-testing-infographic/)
+* [https://speakerdeck.com/boldminded/b-testing](https://speakerdeck.com/boldminded/b-testing)
