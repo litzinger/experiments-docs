@@ -1,5 +1,5 @@
 ---
-title: Experiments
+title: Configuration
 taxonomy:
     category: docs
 ---
